@@ -10,7 +10,7 @@ class Cart {
       return 'Only instance of Item can be entered into the cart';
     }
     if (item.quantity < quantity) {
-      return 'quantity to be added is morethan quantity available';
+      return 'quantity to be added is morethan the quantity available';
     }
 
     const existingEntry = this.items.find(e => e.item.id === item.id);
