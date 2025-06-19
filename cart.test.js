@@ -55,7 +55,7 @@ describe('Shopping Cart', () => {
         price:5000, quantity:10})
 
         const response = cart.addItem(item, 12)
-        expect(response).toEqual("quantity to be added is morethan quantity available")
+        expect(response).toEqual("quantity to be added is morethan the quantity available")
         cart.emptyCart()
     })
 
